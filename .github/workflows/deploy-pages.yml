@@ -36,10 +36,13 @@ jobs:
           test -f _site/CNAME
           test -f _site/.nojekyll
           test -f _site/.well-known/assetlinks.json
+          test ! -e _site/.env
+          test ! -e _site/.env.local
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
+          include-hidden-files: true
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
