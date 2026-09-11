@@ -36,6 +36,7 @@ jobs:
           test -f _site/CNAME
           test -f _site/.nojekyll
           test -f _site/.well-known/assetlinks.json
+          test -f _site/.well-known/apple-app-site-association
           test ! -e _site/.env
           test ! -e _site/.env.local
       - name: Upload GitHub Pages artifact
