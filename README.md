@@ -1,9 +1,11 @@
 # mytms-candidate-pages
 Compiled TEST web deployment for the MyTMS Candidate app. Source remains in the private mytms-app repository.
 
-Notification inbox release, 10 October 2026. Exact source:
-`d23876c3232a7405ef4da8d0c88a8d2acfea2735` in `kierarthur/mytms-app`.
+Notification presentation correction, 11 October 2026. Exact complete source:
+`b2b95244321a72628bcc041dd2f2b6e45f78b9e0` in `kierarthur/mytms-app`.
 Sealed TEST web archive SHA-256:
-`d4640b0ace31c4980ef100ae0942abcafb87b6b5bb7c0fd1721da3a077de4906`.
-Initial 14 notices, Load More, individual Delete/Undo, and server-snapshot
-whole-inbox actions. Publish only after compatible TEST database/Workers pass.
+`6aff4b1fb8657d5ab4aa76e4270fe7d74667b36fdf274c6a89fe2ec46a982133`.
+Initial 14 notices, Load More, grouped inbox, independent responsive bins and
+three-dot whole-inbox actions. No Undo UI. Exact server-snapshot bulk deletion
+and existing compatible TEST database/Workers remain unchanged. TEST web only;
+the existing Android/iOS store binaries do not include this correction.
